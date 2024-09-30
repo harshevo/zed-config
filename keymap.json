@@ -108,11 +108,12 @@
   },
   // Better escape
   {
-    "context": "Editor && vim_mode == insert && !menu",
+    "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore" // remap jk in insert mode to escape
     }
   },
+
   // Rename
   {
     "context": "Editor && vim_operator == c",
@@ -133,7 +134,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "space t": "terminal_panel::ToggleFocus"
+      "ctrl-p": "terminal_panel::ToggleFocus"
     }
   },
   {
@@ -181,15 +182,15 @@
       // Map VSCode like keybindings
       "cmd-b": "workspace::ToggleRightDock"
     }
-  }
+  },
   // Subword motion is not working really nice with `ciw`, disable for now
-  // {
-  //   "context": "VimControl && !menu",
-  //   "bindings": {
-  //     "w": "vim::NextSubwordStart",
-  //     "b": "vim::PreviousSubwordStart",
-  //     "e": "vim::NextSubwordEnd",
-  //     "g e": "vim::PreviousSubwordEnd"
-  //   }
-  // }
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd"
+    }
+  }
 ]
