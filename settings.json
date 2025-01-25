@@ -23,5 +23,12 @@
   "autosave": "on_focus_change",
   "ui_font_size": 16,
   "buffer_font_size": 16,
-  "theme": "Ayu Dark"
+  "theme": "macOS Classic Dark2",
+
+  "experimental.theme_overrides": {
+    "editor.document_highlight.read_background": "#00000000",
+    "editor.document_highlight.write_background": "#00000000"
+  },
+
+  "current_line_highlight": "gutter"
 }
