@@ -85,7 +85,14 @@
       "space f f": "file_finder::Toggle",
       // TODO: Open other files
       // Show project panel with current file
-      "space e": "project_panel::ToggleFocus"
+      "space e": "workspace::ToggleLeftDock"
+    }
+  },
+
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock"
     }
   },
   // Empty pane, set of keybindings that are available when there is no active editor
