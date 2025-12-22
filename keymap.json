@@ -30,7 +30,7 @@
     },
   },
   {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "context": "Editor && !Terminal && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
       // Window movement bindings
@@ -90,7 +90,7 @@
   },
 
   {
-    "context": "Workspace",
+    "context": "(Workspace && (vim_mode == normal || vim_mode == visual)) && !Terminal || menu",
     "bindings": {
       "space e": "workspace::ToggleLeftDock",
     },
@@ -139,7 +139,7 @@
   },
   // Toggle terminal
   {
-    "context": "Terminal || Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "context": "Terminal",
     "bindings": {
       "ctrl-p": "terminal_panel::Toggle",
     },
@@ -201,3 +201,4 @@
     },
   },
 ]
+
